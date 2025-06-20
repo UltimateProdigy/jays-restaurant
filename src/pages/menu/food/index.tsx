@@ -1,4 +1,5 @@
 import { foodMenu } from "../data"
+import foodIcon from "../../../assets/nice-food.jpg"
 
 interface FoodItem {
     id: number;
@@ -44,7 +45,11 @@ const Food: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-red-900 to-slate-900 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-red-900 to-slate-900 py-12 px-4 bg-center bg-no-repeat backdrop-blur-md"
+            style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(${foodIcon})`
+            }}
+        >
             <div className="max-w-6xl mx-auto text-center mb-16">
                 <div className="relative">
                     <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-orange-400 via-red-500 to-pink-600 bg-clip-text text-transparent mb-6">

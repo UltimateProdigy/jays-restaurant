@@ -1,4 +1,5 @@
 import { desertMenu } from "../data"
+import desertIcon from "../../../assets/desert.jpg"
 
 interface DesertItem {
     id: number;
@@ -44,7 +45,10 @@ const Desert: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-12 px-4 bg-cover bg-center bg-no-repeat backdrop-blur-md"
+            style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(${desertIcon})`
+            }}>
             <div className="max-w-6xl mx-auto text-center mb-16">
                 <div className="relative">
                     <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 bg-clip-text text-transparent mb-6">
