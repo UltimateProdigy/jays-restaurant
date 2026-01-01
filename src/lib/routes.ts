@@ -5,9 +5,8 @@ export const routes = {
     },
     menu: {
         index: "/menu",
-        food: "/menu/food",
-        drinks: "/menu/drinks",
-        desert: "/menu/desert",
+        starters: "/menu/starters",
+        mainDish: "/menu/main-dish",
     },
     reservation: {
         index: "/reservation",
