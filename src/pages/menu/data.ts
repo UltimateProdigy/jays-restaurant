@@ -372,3 +372,94 @@ export const desertMenu = [
     category: "Dessert",
   },
 ];
+
+export const kidsMenu = [
+  {
+    id: 1,
+    name: "Chicken & Chips",
+    description:
+      "Crispy chicken tenders with golden French fries, served with ketchup",
+    price: "₦7,000",
+    category: "Main Dishes",
+  },
+  {
+    id: 2,
+    name: "Cheesy Mac & Cheese",
+    description: "Creamy elbow pasta baked with three kinds of melty cheese",
+    price: "₦9,000",
+    category: "Main Dishes",
+  },
+  {
+    id: 3,
+    name: "Sticky Chicken Wings",
+    description: "Sweet and tangy glazed wings that are finger-licking good",
+    price: "₦8,950",
+    category: "Main Dishes",
+  },
+  {
+    id: 4,
+    name: "Jollof Rice & Grilled Chicken",
+    description: "Flavorful tomato rice with tender grilled chicken drumstick",
+    price: "₦10,500",
+    category: "Main Dishes",
+  },
+  {
+    id: 5,
+    name: "Chicken Buffalo Burger",
+    description:
+      "Juicy chicken patty with mild buffalo sauce and crispy lettuce",
+    price: "₦12,790",
+    category: "Burgers",
+  },
+  {
+    id: 6,
+    name: "Chicken Parmesan Burger",
+    description:
+      "Breaded chicken patty topped with marinara sauce and melted mozzarella",
+    price: "₦10,650",
+    category: "Burgers",
+  },
+  {
+    id: 7,
+    name: "Jay's Tribute Steak Burger",
+    description: "Beef burger with special sauce, served with a side of smiles",
+    price: "₦15,640",
+    category: "Burgers",
+  },
+  {
+    id: 8,
+    name: "Creamy Mashed Potatoes",
+    description: "Buttery smooth potatoes perfect for dipping or mixing",
+    price: "₦7,000",
+    category: "Sides",
+  },
+  {
+    id: 9,
+    name: "Roasted Potato Wedges",
+    description:
+      "Seasoned potato wedges baked until crispy on the outside, fluffy inside",
+    price: "₦5,000",
+    category: "Sides",
+  },
+  {
+    id: 10,
+    name: "Classic French Fries",
+    description: "Golden crispy fries, just the way kids love them",
+    price: "₦4,500",
+    category: "Sides",
+  },
+  {
+    id: 11,
+    name: "Dirty Fries",
+    description: "Loaded fries with cheese sauce and crispy bacon bits",
+    price: "₦5,000",
+    category: "Sides",
+  },
+  {
+    id: 12,
+    name: "Yam Fries",
+    description: "Sweet yam cut into fries and fried to perfection",
+    price: "₦5,000",
+    category: "Sides",
+  },
+];

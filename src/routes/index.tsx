@@ -14,6 +14,7 @@ const Reservation = lazy(() => import("../pages/reservation/index"));
 const ContactUs = lazy(() => import("../pages/contact/index"));
 const Starters = lazy(() => import("../pages/menu/starters/index"));
 const MainDish = lazy(() => import("../pages/menu/main-dish/index"));
+const Kids = lazy(() => import("../pages/menu/kids"));
 const Fingers = lazy(() => import("../pages/menu/starters/fingers/index"));
 const Soups = lazy(() => import("../pages/menu/starters/soups/index"));
 const SpringRoll = lazy(
@@ -26,6 +27,10 @@ const Rice = lazy(() => import("../pages/menu/main-dish/rice/index"));
 const Salads = lazy(() => import("../pages/menu/main-dish/salads/index"));
 const SeaFoods = lazy(() => import("../pages/menu/main-dish/sea-foods/index"));
 const Steaks = lazy(() => import("../pages/menu/main-dish/steaks/index"));
+const KidsMain = lazy(() => import("../pages/menu/kids/main/index"))
+const Burger = lazy(() => import("../pages/menu/kids/burger/index"))
+const Sides = lazy(() => import("../pages/menu/kids/sides/index"))
+
 
 const jays: RouteConfig[] = [
   {
@@ -43,6 +48,22 @@ const jays: RouteConfig[] = [
   {
     path: routes.contact.index,
     element: <ContactUs />,
+  },
+  {
+    path: routes.menu.kids,
+    element: <Kids />,
+  },
+   {
+    path: routes.menu.kidsMain,
+    element: <KidsMain />,
+  },
+   {
+    path: routes.menu.burger,
+    element: <Burger />,
+  },
+   {
+    path: routes.menu.sides,
+    element: <Sides />,
   },
   {
     path: routes.menu.starters,

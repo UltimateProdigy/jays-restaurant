@@ -6,6 +6,7 @@ export const routes = {
   menu: {
     index: "/menu",
     starters: "/menu/starters",
+    kids: "/menu/kids",
     mainDish: "/menu/main-dish",
     drinks: "/menu/drinks",
     fingers: "/menu/starters/fingers",
@@ -18,6 +19,9 @@ export const routes = {
     salads: "/menu/main-dish/salads",
     seaFoods: "/menu/main-dish/sea-foods",
     steaks: "/menu/main-dish/steaks",
+    burger: "/menu/kids/burger",
+    kidsMain: "/menu/kids/main",
+    sides: "/menu/kids/sides"
   },
   reservation: {
     index: "/reservation",
