@@ -77,7 +77,7 @@ export const foodMenu = [
   },
   {
     id: 11,
-    name: "Golden Chicken Taquitos / STICK",
+    name: "Golden Chicken Taquitos",
     description:
       "Rolled tortillas filled with seasoned chicken, served with a zesty house dip",
     price: "₦3,340.2",
@@ -92,21 +92,21 @@ export const foodMenu = [
   },
   {
     id: 13,
-    name: "Shrimps in Mayo Spring Rolls / STICKS",
+    name: "Shrimps in Mayo Spring Rolls",
     description: "Golden pastries filled with savory Shrimps and mayo sauce",
     price: "₦2,730",
     category: "Spring Roll",
   },
   {
     id: 14,
-    name: "Chicken spring roll/ STICKS",
+    name: "Chicken spring roll",
     description: "Golden pastries filled with Spiced chicken",
     price: "₦2,250",
     category: "Spring Roll",
   },
   {
     id: 15,
-    name: "Vegetarian spring roll / STICKS",
+    name: "Vegetarian spring roll",
     description: "Golden pastries filled with savory vegetables and spices ",
     price: "₦2,000",
     category: "Spring Roll",

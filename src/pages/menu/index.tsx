@@ -1,12 +1,14 @@
 import menuIcon from "../../assets/food.jpg";
 import foodImage from "../../assets/chow.jpg";
 import desertImage from "../../assets/desert.jpg";
+import drinkImage from "../../assets/drink.jpg";
 import { routes } from "../../lib/routes";
 import { useNavigate } from "react-router-dom";
 
 const menu = [
   { name: "STARTERS", image: foodImage, route: routes.menu.starters },
   { name: "MAIN DISHES", image: desertImage, route: routes.menu.mainDish },
+  { name: "DRINKS", image: drinkImage, route: routes.menu.drinks },
 ];
 
 const Menu = () => {
@@ -21,7 +23,7 @@ const Menu = () => {
       <p className="text-2xl sm:text-3xl lg:text-4xl text-white mb-4 sm:mb-6 lg:mb-8">
         Our Menu
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-6xl">
         {menu.map((data, index) => (
           <div
             key={index}
