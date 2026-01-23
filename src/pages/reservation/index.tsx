@@ -288,9 +288,9 @@ Thank you for choosing our restaurant! 🌟
             </h2>
             <div className="space-y-4">
               {[
-                { day: "Monday - Thursday", hours: "11:00 AM - 10:00 PM" },
-                { day: "Friday - Saturday", hours: "11:00 AM - 11:00 PM" },
-                { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
+                { day: "Monday - Thursday", hours: "02:00 PM - 10:00 PM" },
+                { day: "Friday - Saturday", hours: "02:00 PM - 10:00 PM" },
+                { day: "Sunday", hours: "01:00 PM - 10:00 PM" },
               ].map((item, index) => (
                 <div
                   key={index}
