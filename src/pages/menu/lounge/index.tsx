@@ -1,15 +1,47 @@
-import menuIcon from "../../assets/food.jpg";
-import foodImage from "../../assets/chow.jpg";
-import desertImage from "../../assets/desert.jpg";
-import { routes } from "../../lib/routes";
+import menuIcon from "../../../assets/food.jpg";
+import { routes } from "../../../lib/routes";
 import { useNavigate } from "react-router-dom";
 
 const menu = [
-  { name: "RESTAURANT MENU", image: foodImage, route: routes.menu.restaurant },
-  { name: "LOUNGE MENU", image: desertImage, route: routes.menu.lounge },
+  {
+    name: "JAY'S FLAMING GRILLS",
+    image:
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+    route: routes.menu.flaming,
+  },
+  {
+    name: "SOUPS AND SAUCE",
+    image:
+      "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+    route: routes.menu.loungeSoups,
+  },
+  {
+    name: "DRINKS",
+    image:
+      "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    route: routes.menu.loungeDrinks,
+  },
+  {
+    name: "FINGERS AND SIDES",
+    image:
+      "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&q=80",
+    route: routes.menu.loungeSides,
+  },
+  {
+    name: "JAY'S ROYAL",
+    image:
+      "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+    route: routes.menu.royal,
+  },
+  {
+    name: "JAY'S SPECIAL MAIN",
+    image:
+      "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&q=80",
+    route: routes.menu.special,
+  },
 ];
 
-const Menu = () => {
+const LoungeMenu = () => {
   const navigate = useNavigate();
   return (
     <div
@@ -19,9 +51,9 @@ const Menu = () => {
       }}
     >
       <p className="text-2xl sm:text-3xl lg:text-4xl text-white mb-4 sm:mb-6 lg:mb-8">
-        Our Menu
+        Our Lounge Menu
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-6xl">
         {menu.map((data, index) => (
           <div
             key={index}
@@ -47,4 +79,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default LoungeMenu;

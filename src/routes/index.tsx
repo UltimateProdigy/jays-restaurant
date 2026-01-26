@@ -18,7 +18,7 @@ const Kids = lazy(() => import("../pages/menu/kids"));
 const Fingers = lazy(() => import("../pages/menu/starters/fingers/index"));
 const Soups = lazy(() => import("../pages/menu/starters/soups/index"));
 const SpringRoll = lazy(
-  () => import("../pages/menu/starters/spring-roll/index")
+  () => import("../pages/menu/starters/spring-roll/index"),
 );
 const Asian = lazy(() => import("../pages/menu/main-dish/asian/index"));
 const Desserts = lazy(() => import("../pages/menu/main-dish/desserts/index"));
@@ -27,10 +27,17 @@ const Rice = lazy(() => import("../pages/menu/main-dish/rice/index"));
 const Salads = lazy(() => import("../pages/menu/main-dish/salads/index"));
 const SeaFoods = lazy(() => import("../pages/menu/main-dish/sea-foods/index"));
 const Steaks = lazy(() => import("../pages/menu/main-dish/steaks/index"));
-const KidsMain = lazy(() => import("../pages/menu/kids/main/index"))
-const Burger = lazy(() => import("../pages/menu/kids/burger/index"))
-const Sides = lazy(() => import("../pages/menu/kids/sides/index"))
-
+const KidsMain = lazy(() => import("../pages/menu/kids/main/index"));
+const Burger = lazy(() => import("../pages/menu/kids/burger/index"));
+const Sides = lazy(() => import("../pages/menu/kids/sides/index"));
+const Restaurant = lazy(() => import("../pages/menu/restaurant/index"));
+const Lounge = lazy(() => import("../pages/menu/lounge/index"));
+const FlamingGrills = lazy(() => import("../pages/menu/lounge/flaming/index"))
+const Royal= lazy(() => import("../pages/menu/lounge/royal/index"))
+const LoungeSides = lazy(() => import("../pages/menu/lounge/sides/index"))
+const LoungeSoups = lazy(() => import("../pages/menu/lounge/soups/index"))
+const Special = lazy(() => import("../pages/menu/lounge/special/index"))
+const LoungeDrinks = lazy(() => import("../pages/menu/drinks/lounge"))
 
 const jays: RouteConfig[] = [
   {
@@ -40,6 +47,18 @@ const jays: RouteConfig[] = [
   {
     path: routes.menu.index,
     element: <Menu />,
+  },
+  {
+    path: routes.menu.restaurant,
+    element: <Restaurant />,
+  },
+  {
+    path: routes.menu.lounge,
+    element: <Lounge />,
+  },
+  {
+    path: routes.menu.loungeDrinks,
+    element: <LoungeDrinks />,
   },
   {
     path: routes.reservation.index,
@@ -53,15 +72,15 @@ const jays: RouteConfig[] = [
     path: routes.menu.kids,
     element: <Kids />,
   },
-   {
+  {
     path: routes.menu.kidsMain,
     element: <KidsMain />,
   },
-   {
+  {
     path: routes.menu.burger,
     element: <Burger />,
   },
-   {
+  {
     path: routes.menu.sides,
     element: <Sides />,
   },
@@ -112,6 +131,26 @@ const jays: RouteConfig[] = [
   {
     path: routes.menu.steaks,
     element: <Steaks />,
+  },
+  {
+    path: routes.menu.flaming,
+    element: <FlamingGrills />,
+  },
+  {
+    path: routes.menu.royal,
+    element: <Royal />,
+  },
+  {
+    path: routes.menu.loungeSides,
+    element: <LoungeSides />,
+  },
+  {
+    path: routes.menu.loungeSoups,
+    element: <LoungeSoups />,
+  },
+  {
+    path: routes.menu.special,
+    element: <Special />,
   },
 ];
 

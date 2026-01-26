@@ -1,15 +1,19 @@
-import menuIcon from "../../assets/food.jpg";
-import foodImage from "../../assets/chow.jpg";
-import desertImage from "../../assets/desert.jpg";
-import { routes } from "../../lib/routes";
+import menuIcon from "../../../assets/food.jpg";
+import foodImage from "../../../assets/chow.jpg";
+import desertImage from "../../../assets/desert.jpg";
+import drinkImage from "../../../assets/drink.jpg";
+import kidsImage from "../../../assets/nice-food.jpg";
+import { routes } from "../../../lib/routes";
 import { useNavigate } from "react-router-dom";
 
 const menu = [
-  { name: "RESTAURANT MENU", image: foodImage, route: routes.menu.restaurant },
-  { name: "LOUNGE MENU", image: desertImage, route: routes.menu.lounge },
+  { name: "STARTERS", image: foodImage, route: routes.menu.starters },
+  { name: "MAIN DISHES", image: desertImage, route: routes.menu.mainDish },
+  { name: "DRINKS", image: drinkImage, route: routes.menu.drinks },
+  { name: "KIDS", image: kidsImage, route: routes.menu.kids },
 ];
 
-const Menu = () => {
+const RestaurantMenu = () => {
   const navigate = useNavigate();
   return (
     <div
@@ -19,9 +23,9 @@ const Menu = () => {
       }}
     >
       <p className="text-2xl sm:text-3xl lg:text-4xl text-white mb-4 sm:mb-6 lg:mb-8">
-        Our Menu
+        Our Restaurant Menu
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-6xl">
         {menu.map((data, index) => (
           <div
             key={index}
@@ -47,4 +51,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default RestaurantMenu;

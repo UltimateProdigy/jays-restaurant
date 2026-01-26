@@ -9,6 +9,7 @@ export const routes = {
     kids: "/menu/kids",
     mainDish: "/menu/main-dish",
     drinks: "/menu/drinks",
+    loungeDrinks: "/menu/drinks/lounge",
     fingers: "/menu/starters/fingers",
     soups: "/menu/starters/soups",
     springRoll: "/menu/starters/spring-roll",
@@ -21,7 +22,14 @@ export const routes = {
     steaks: "/menu/main-dish/steaks",
     burger: "/menu/kids/burger",
     kidsMain: "/menu/kids/main",
-    sides: "/menu/kids/sides"
+    sides: "/menu/kids/sides",
+    restaurant: "/menu/restaurant",
+    lounge: "/menu/lounge",
+    flaming: "/menu/lounge/flaming",
+    royal: "/menu/lounge/royal",
+    loungeSides: "/menu/lounge/sides",
+    loungeSoups: "/menu/lounge/soups",
+    special: "/menu/lounge/special",
   },
   reservation: {
     index: "/reservation",
