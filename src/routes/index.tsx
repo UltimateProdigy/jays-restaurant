@@ -32,12 +32,20 @@ const Burger = lazy(() => import("../pages/menu/kids/burger/index"));
 const Sides = lazy(() => import("../pages/menu/kids/sides/index"));
 const Restaurant = lazy(() => import("../pages/menu/restaurant/index"));
 const Lounge = lazy(() => import("../pages/menu/lounge/index"));
-const FlamingGrills = lazy(() => import("../pages/menu/lounge/flaming/index"))
-const Royal= lazy(() => import("../pages/menu/lounge/royal/index"))
-const LoungeSides = lazy(() => import("../pages/menu/lounge/sides/index"))
-const LoungeSoups = lazy(() => import("../pages/menu/lounge/soups/index"))
-const Special = lazy(() => import("../pages/menu/lounge/special/index"))
-const LoungeDrinks = lazy(() => import("../pages/menu/drinks/lounge"))
+const FlamingGrills = lazy(() => import("../pages/menu/lounge/flaming/index"));
+const Royal = lazy(() => import("../pages/menu/lounge/royal/index"));
+const LoungeSides = lazy(() => import("../pages/menu/lounge/sides/index"));
+const LoungeSoups = lazy(() => import("../pages/menu/lounge/soups/index"));
+const Special = lazy(() => import("../pages/menu/lounge/special/index"));
+const LoungeDrinks = lazy(() => import("../pages/menu/drinks/lounge"));
+const LoungeDrinksCategory = lazy(
+  () => import("../pages/menu/lounge/drinks/index"),
+);
+const RestaurantDrinks = lazy(() => import("../pages/menu/drinks/restaurant"));
+const RestaurantDrinksCategory = lazy(
+  () => import("../pages/menu/restaurant/drinks/index"),
+);
+
 
 const jays: RouteConfig[] = [
   {
@@ -59,6 +67,18 @@ const jays: RouteConfig[] = [
   {
     path: routes.menu.loungeDrinks,
     element: <LoungeDrinks />,
+  },
+  {
+    path: routes.menu.loungeDrinksCategory,
+    element: <LoungeDrinksCategory />,
+  },
+  {
+    path: routes.menu.restaurantDrinks,
+    element: <RestaurantDrinks />,
+  },
+  {
+    path: routes.menu.restaurantDrinksCategory,
+    element: <RestaurantDrinksCategory />,
   },
   {
     path: routes.reservation.index,

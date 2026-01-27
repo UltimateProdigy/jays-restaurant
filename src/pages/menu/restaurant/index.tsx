@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const menu = [
   { name: "STARTERS", image: foodImage, route: routes.menu.starters },
   { name: "MAIN DISHES", image: desertImage, route: routes.menu.mainDish },
-  { name: "DRINKS", image: drinkImage, route: routes.menu.drinks },
+  { name: "DRINKS", image: drinkImage, route: routes.menu.restaurantDrinks },
   { name: "KIDS", image: kidsImage, route: routes.menu.kids },
 ];
 

@@ -1,5 +1,4 @@
 import menuIcon from "../../../assets/food.jpg";
-import { routes } from "../../../lib/routes";
 import { useNavigate } from "react-router-dom";
 
 const menu = [
@@ -7,66 +6,71 @@ const menu = [
     name: "BEER",
     image:
       "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80",
-    route: routes.menu.restaurant,
+    category: "beer",
   },
   {
-    name: "BRANDING",
+    name: "BRANDY",
     image:
       "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "brandy",
   },
   {
     name: "WHISKY",
     image:
       "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&q=80",
-    route: routes.menu.restaurant,
+    category: "whisky",
   },
   {
     name: "TEQUILA",
     image:
       "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "tequila",
   },
   {
     name: "VODKA",
     image:
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&q=80",
-    route: routes.menu.restaurant,
+    category: "vodka",
   },
   {
     name: "GIN",
     image:
       "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "gin",
   },
   {
     name: "RUM",
     image:
       "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "rum",
   },
   {
     name: "LIQUER",
     image:
       "https://images.unsplash.com/photo-1582408921715-18e7806365c1?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "liquer",
   },
   {
     name: "APRETIVES",
     image:
       "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "apretives",
   },
   {
     name: "ENERGY DRINKS",
     image:
       "https://images.unsplash.com/photo-1623424155355-c965e8fea8f1?w=800&q=80",
-    route: routes.menu.lounge,
+    category: "energy-drinks",
   },
 ];
 
 const LoungeDrinks = () => {
   const navigate = useNavigate();
+
+  const handleCategoryClick = (category: string) => {
+    navigate(`/lounge/drinks/${category}`);
+  };
+
   return (
     <div
       className="flex flex-col justify-center items-center min-h-screen px-4 py-8 bg-cover bg-center bg-no-repeat backdrop-blur-md"
@@ -82,7 +86,7 @@ const LoungeDrinks = () => {
           <div
             key={index}
             className="group relative p-4 sm:p-6 rounded-xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg hover:bg-white/20 hover:scale-105 transform transition-all duration-300 ease-in-out cursor-pointer mx-auto w-full max-w-xs sm:max-w-none"
-            onClick={() => navigate(data.route)}
+            onClick={() => handleCategoryClick(data.category)}
           >
             <div className="flex flex-col items-center text-center">
               <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 mb-3 sm:mb-4 rounded-full overflow-hidden border-2 border-white/30 group-hover:border-white/50 transition-colors duration-300">
