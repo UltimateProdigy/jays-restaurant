@@ -574,7 +574,7 @@ export const loungeMenu = [
     id: 16,
     name: "Peppered snail",
     description: "jumbo snail cooked and sauced.",
-    price: "₦5,000.00",
+    price: "₦10,000.00 per plate",
     category: "Royal",
   },
   {

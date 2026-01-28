@@ -13,20 +13,20 @@ const links = [
 const socialLinks = [
   {
     icon: Facebook,
-    url: "https://facebook.com/jaysrestaurant",
+    url: "#",
     label: "Facebook",
   },
   {
     icon: Instagram,
-    url: "https://instagram.com/jaysrestaurant",
+    url: "https://instagram.com/Jaysplaceng_/",
     label: "Instagram",
   },
   {
     icon: Twitter,
-    url: "https://twitter.com/jaysrestaurant",
+    url: "#",
     label: "Twitter",
   },
-  { icon: Mail, url: "mailto:info@jaysrestaurant.com", label: "Email" },
+  { icon: Mail, url: "mailto:jaysplaceng@qualityservice.com", label: "Email" },
 ];
 
 const Home = () => {

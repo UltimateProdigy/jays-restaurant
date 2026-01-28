@@ -19,7 +19,11 @@ const LoungeDrinksPage: React.FC = () => {
     const itemCategory = item.category.toLowerCase();
 
     if (normalizedCategory === "beer") {
-      return itemCategory === "beer" || itemCategory === "stout";
+      return (
+        itemCategory === "beer" ||
+        itemCategory === "beer" ||
+        itemCategory === "stout"
+      );
     }
     if (normalizedCategory === "brandy") {
       return itemCategory === "brandy";
@@ -58,7 +62,7 @@ const LoungeDrinksPage: React.FC = () => {
         itemCategory === "brut/champagne"
       );
     }
-    if (normalizedCategory === "energy drinks") {
+    if (normalizedCategory === "energy-drinks") {
       return itemCategory === "energy drink";
     }
 

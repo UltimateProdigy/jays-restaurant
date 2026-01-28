@@ -33,11 +33,7 @@ const RestaurantDrinksPage: React.FC = () => {
       return (
         itemCategory === "coke" ||
         itemCategory === "sprite" ||
-        itemCategory === "energy drink" ||
-        itemCategory === "water" ||
-        itemCategory === "beer" ||
-        itemCategory === "stout" ||
-        itemCategory.includes("drink")
+        itemCategory === "water"  
       );
     }
     if (normalizedCategory === "juice") {
