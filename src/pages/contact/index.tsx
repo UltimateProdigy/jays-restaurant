@@ -150,7 +150,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <p className="text-slate-400 text-sm">Phone Number</p>
-                  <p className="text-white text-lg">+234 812 345 6789</p>
+                  <p className="text-white text-lg">+234 703 780 7541</p>
                 </div>
               </div>
 
